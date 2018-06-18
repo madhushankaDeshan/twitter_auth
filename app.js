@@ -11,7 +11,7 @@ var session = require('express-session');
 passport.use(new Strategy({
     consumerKey:'ZAeEF3a8ApdIiRY8w9kxG0qEg',
     consumerSecret:'W7ywRk0KzhCE7Yatvdczt2R1uAiohnU0NnjYiWyFREzpw0Mhhz',
-    callbackURL:'http://localhost:3000/twitter/return'
+    callbackURL:'http://209.97.170.151:3000/twitter/return'
 }, function (token, tokenSecret,profile, callback) {
     return callback(null,profile);
 }));

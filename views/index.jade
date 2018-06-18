@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  if user
+    p user name: #{user.username}
+    p user id: #{user.id}
+    p user email: #{user.email}
+    img(src=user.photos[0].value)
+
+  a(href='/twitter/login') login
